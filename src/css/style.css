@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100..900&display=swap');
+
+
+/** Gerais **/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+    font-size: 18px;
+    background-color: #141414;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1220px;
+    padding: 20px 20px;
+}
+
+.logo a {
+    font-family: 'Calistoga';
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo span {
+    color: orangered;
+}
+
+
+/** Header **/
+
+header .container {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 50px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+header nav .leftside {
+    display: flex;
+    flex: 1;
+}
+
+header nav li {
+    margin: 0 30px;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    color: orangered;
+}
+
+header nav .button {
+    display: block;
+    border: 1px solid white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav .button:hover {
+    color: orangered;
+    border-color: orangered;
+}
+
+header .menu {
+    display: none;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header .menu-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+header .menu-icon div {
+    height: 6px;
+    background-color: white;
+}
+
+
+/** Hero Area **/
+
+.hero .container {
+    display: flex;
+}
+
+.hero .leftside, .hero .rightside {
+    flex: 1;
+}
+
+.hero .leftside {
+    padding-bottom: 150px;
+}
+
+.hero .rightside {
+    text-align: center;
+}
+
+.hero .rightside img {
+    width: auto;
+    height: 600px;
+}
+
+.hero h1 {
+    font-family: 'Calistoga';
+    font-size: 72px;
+    line-height: 84px;
+    margin-top: 40px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 40px 0px;
+}
+
+.hero .button {
+    display: inline-block;
+    background-color: #fe6a0f;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 15px 80px;
+    border-radius: 10px;
+}
+
+.hero .button:hover {
+    opacity: 0.7;
+}
+
+
+
+
+@media (max-width: 820px) {
+    header nav {
+        display: none;
+    }
+    header .menu {
+        display: flex;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .leftside {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .hero .leftside h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    
+    .hero .rightside {
+        padding-bottom: 50px;
+    }
+
+    .hero .rightside img {
+        height: 300px;
+    }
+}
